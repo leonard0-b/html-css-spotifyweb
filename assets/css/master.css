@@ -126,6 +126,7 @@ aside {
 
 }
 /* /side-bar */
+
 /* upgrade-bar */
 .upgrade-bar {
   position: fixed;
@@ -159,6 +160,7 @@ aside {
   padding: 0 10px;
 }
 /* /top-bar */
+
 /* scrollsection */
 .scroll-section {
   width: calc(100vw - 150px);
