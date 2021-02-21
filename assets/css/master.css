@@ -1,0 +1,87 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITIES */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-weight500 {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font-size20 {
+  font-size: 20px;
+}
+
+.margin-top20 {
+  margin-top: 20px;
+}
+
+.margin-bottom10 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/* /UTILITIES */
+
+/* COLORS */
+.white {
+  color: #fff;
+}
+
+.lightgrey {
+  color: #7d7f84;
+}
+
+.darkgrey {
+  background-color: #282828;
+}
+
+.darkblue {
+  background-color: #141922;
+}
+
+.black {
+  background-color: #000;
+}
+
+/* /COLORS */
+main {
+  height: calc(100vh - 75px);
+}
+
+/* sidebar */
+aside {
+  width: 150px;
+  height: calc(100vh - 75px);
+}
+/* /sidebar */
+
+/* scrollsection */
+.scroll-section {
+  width: calc(100vw - 150px);
+  height: calc(100vh - 75px);
+}
+/* /scrollsection */
+
+/* footer */
+footer {
+  height: 75px;
+}
+/* footer */
