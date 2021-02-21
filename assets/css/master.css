@@ -34,6 +34,14 @@ ul {
   list-style: none;
 }
 
+li {
+  color: #6d6d6d;
+}
+
+a {
+  text-decoration: none;
+}
+
 .flex {
   display: flex;
 }
@@ -47,6 +55,10 @@ ul {
 
 .lightgrey {
   color: #7d7f84;
+}
+
+.text-color {
+  color: #6d6d6d;
 }
 
 .darkgrey {
@@ -70,6 +82,21 @@ main {
 aside {
   width: 150px;
   height: calc(100vh - 75px);
+  flex-direction: column;
+  padding: 3px 3px;
+}
+
+.logo > img {
+  width: 100px;
+}
+
+.side-section {
+  background-color: blue;
+  margin: 2px 0;
+}
+
+.login {
+  margin-top: auto;
 }
 /* /sidebar */
 
