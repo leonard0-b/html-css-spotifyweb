@@ -10,6 +10,10 @@
   text-transform: uppercase;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .font-weight500 {
   font-weight: 500;
 }
@@ -40,6 +44,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+h2 {
+  color: #fff;
 }
 
 .flex {
@@ -95,6 +103,10 @@ aside {
   margin: 2px 0;
 }
 
+.playlist {
+  overflow-y: auto;
+}
+
 .login {
   margin-top: auto;
 }
@@ -118,13 +130,27 @@ aside {
   padding: 10px 25px;
   font-size: 10px;
 }
-
 /* upgrade-bar */
 /* scrollsection */
 .scroll-section {
   width: calc(100vw - 150px);
   height: calc(100vh - 75px);
+  overflow-y: auto;
 }
+
+.album-container {
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: calc(100% / 6 - 30px);
+  margin: 0 15px;
+}
+
+.card > img {
+  width: 100%;
+}
+
 /* /scrollsection */
 
 /* footer */
