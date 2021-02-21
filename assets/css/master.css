@@ -78,7 +78,7 @@ main {
   height: calc(100vh - 75px);
 }
 
-/* sidebar */
+/* side-bar */
 aside {
   width: 150px;
   height: calc(100vh - 75px);
@@ -98,8 +98,28 @@ aside {
 .login {
   margin-top: auto;
 }
-/* /sidebar */
+/* /side-bar */
+/* upgrade-bar */
+.upgrade-bar {
+  position: fixed;
+  top: 0;
+  left: 150px;
+  right: 0;
+  height: 65px;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
+.upgrade-bar > a {
+  margin-right: 5px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 10px;
+}
+
+/* upgrade-bar */
 /* scrollsection */
 .scroll-section {
   width: calc(100vw - 150px);
