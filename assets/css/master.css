@@ -36,6 +36,8 @@ a {
 
 h2 {
   color: #fff;
+  margin-bottom: 10px;
+  margin-top: 25px;
 }
 
 .flex {
@@ -91,6 +93,10 @@ aside {
   margin: 2px 0;
 }
 
+.side-section ul li {
+  align-items: center;
+}
+
 .playlist {
   overflow-y: auto;
 }
@@ -108,17 +114,30 @@ aside {
   height: 65px;
   align-items: center;
   justify-content: flex-end;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .upgrade-bar > a {
-  margin-right: 5px;
+  margin-right: 20px;
   border: 1px solid #fff;
   border-radius: 20px;
   padding: 10px 25px;
   font-size: 10px;
 }
 /* upgrade-bar */
+
+/* top-bar */
+.topbar {
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.topbar-list ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+/* /top-bar */
 /* scrollsection */
 .scroll-section {
   width: calc(100vw - 150px);
@@ -138,6 +157,15 @@ aside {
 
 .card > img {
   width: 100%;
+}
+
+.row1 h2 {
+  margin-bottom: 20px;
+}
+
+.row2 > p, .row3 > p {
+  margin-bottom: 30px;
+
 }
 
 .row3 img {
