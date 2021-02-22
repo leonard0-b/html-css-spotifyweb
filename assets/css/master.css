@@ -223,6 +223,12 @@ aside hr {
   padding: 10px 25px;
   font-size: 10px;
 }
+
+@media all and (max-width: 568px) {
+  .upgrade-bar {
+    left: 50px;
+  }
+}
 /* upgrade-bar */
 
 /* top-bar */
@@ -276,6 +282,10 @@ aside hr {
 @media all and (max-width: 568px)  {
   .card {
     flex-basis: calc(100% / 2 - 20px);
+  }
+
+  .scroll-section {
+    width: calc(100vw - 50px);
   }
 }
 
