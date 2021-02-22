@@ -81,11 +81,11 @@ aside {
   width: 150px;
   height: calc(100vh - 75px);
   flex-direction: column;
-  padding: 3px 3px;
+  padding: 3px 5px;
 }
 
 .logo {
-  height: 60px;
+  height: 57px;
   align-items: center;
 }
 
@@ -100,19 +100,65 @@ aside {
 
 .side-section {
   background-color: blue;
-  margin: 2px 0;
+  margin: 4px 0;
 }
 
 .side-section ul li {
   align-items: center;
+  font-size: 12px;
+  padding: 3px 0;
+  font-weight: bold;
+}
+
+.fa-plus {
+  color: #000;
+  border: 1px solid #a3a3a3;
+  background-color: #a3a3a3;
+  padding: 7px 7px;
+  margin-top: 6px;
+}
+
+.create span {
+  font-size: 14px;
 }
 
 .playlist {
   overflow-y: auto;
 }
 
+.playlist ul li {
+  padding: 6px 0;
+}
+
 .login {
   margin-top: auto;
+}
+
+.login-cred {
+  align-items: center;
+}
+
+.fa-arrow-down {
+  border: 1px solid #6d6d6d;
+  border-radius: 50%;
+  padding: 2px 2px;
+  font-size: 7px;
+}
+
+aside hr {
+  margin-top: 5px;
+}
+
+.login img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.login a {
+  font-size: 10px;
 }
 
 @media all and (max-width: 568px) {
@@ -152,7 +198,7 @@ aside {
 .topbar {
   justify-content: center;
   margin-top: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .topbar-list ul li {
