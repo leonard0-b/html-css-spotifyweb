@@ -17,7 +17,7 @@
           <img class="logo-lg" src="./assets/img/logo-esteso.png" alt="logo">
           <img class="logo-sm" src="./assets/img/logo.png" alt="">
         </div>
-        <div class="side-section cmd">
+        <div class="side-section cmd flex">
           <ul>
             <li class="flex"><svg viewBox="0 0 512 512" width="20" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg><a class="text-color" href="#"> Home</a></li>
             <li class="flex"><svg viewBox="0 0 512 512" width="20" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg><a class="text-color" href="#"> Cerca</a></li>
@@ -40,11 +40,12 @@
           </ul>
         </div>
         <div class="side-section login">
-          <a class="text-color bold" href="#"><i class="fas fa-arrow-down"></i> Installa App</a>
+          <a class="text-color bold" href="#"><i class="fas fa-arrow-down"></i></a>
+          <a class="text-color bold install" href="#"><span>Installa App</span></a>
           <hr>
           <div class="login-cred flex">
             <img src="./assets/img/tumblr_p38zo76BPd1rc40z5o1_1280.png" alt="avatar">
-            <span class="white bold"><a class="white bold" href="#">Leonardo Bongianni</a></span>
+            <span class="white bold"><a class="white bold name" href="#">Leonardo Bongianni</a></span>
           </div>
         </div>
       </aside>
@@ -152,15 +153,14 @@
         <div class="player flex">
           <a href="#"><svg role="img" height="20" width="20" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF"><g fill="#b3b3b3" fill-rule="evenodd"><path d="M4.5 6.8l.7-.8C4.1 4.7 2.5 4 .9 4v1c1.3 0 2.6.6 3.5 1.6l.1.2zm7.5 4.7c-1.2 0-2.3-.5-3.2-1.3l-.6.8c1 1 2.4 1.5 3.8 1.5V14l3.5-2-3.5-2v1.5zm0-6V7l3.5-2L12 3v1.5c-1.6 0-3.2.7-4.2 2l-3.4 3.9c-.9 1-2.2 1.6-3.5 1.6v1c1.6 0 3.2-.7 4.2-2l3.4-3.9c.9-1 2.2-1.6 3.5-1.6z"></path></svg></a>
           <a href="#"><svg role="img" height="20" width="20" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF"><g fill="#b3b3b3" fill-rule="evenodd"><path d="M13 2.5L5 7.119V3H3v10h2V8.881l8 4.619z"></path></svg></a>
-          <!-- <a href="#"><svg role="img" height="20" width="20" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF"><g fill="white" fill-rule="evenodd"><path d="M4.018 14L14.41 8 4.018 2z"></path></svg></a> -->
           <button class="play" type="" name="button"><svg role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF"><path d="M4.018 14L14.41 8 4.018 2z"></path></svg></button>
           <a href="#"><svg role="img" height="20" width="20" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF"><g fill="#b3b3b3" fill-rule="evenodd"><path d="M11 3v4.119L3 2.5v11l8-4.619V13h2V3z"></path></svg></a>
           <a href="#"><svg role="img" height="20" width="20" viewBox="0 0 16 16" class="Svg-ulyrgf-0 hJgLcF"><g fill="#b3b3b3" fill-rule="evenodd"><path d="M5.5 5H10v1.5l3.5-2-3.5-2V4H5.5C3 4 1 6 1 8.5c0 .6.1 1.2.4 1.8l.9-.5C2.1 9.4 2 9 2 8.5 2 6.6 3.6 5 5.5 5zm9.1 1.7l-.9.5c.2.4.3.8.3 1.3 0 1.9-1.6 3.5-3.5 3.5H6v-1.5l-3.5 2 3.5 2V13h4.5C13 13 15 11 15 8.5c0-.6-.1-1.2-.4-1.8z"></path></svg></a>
         </div>
         <div class="song-bar">
-          <span>0:00</span>
+          <span class="white bold">0:00</span>
           <input type="range" min="1" max="100" value="20">
-          <span>1:35</span>
+          <span class="white bold">1:35</span>
         </div>
       </div>
       <div class="footer-right flex">

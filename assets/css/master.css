@@ -170,6 +170,37 @@ aside hr {
     display: block;
   }
 
+  aside {
+    width: 50px;
+  }
+
+  .create, .playlist, .name, .install, hr {
+    display: none;
+  }
+
+  .login-cred > img {
+    margin-top: 20px;
+  }
+
+  .login-cred {
+    justify-content: center;
+  }
+
+  .login {
+    text-align: center;
+  }
+
+  .cmd a  {
+    display: none;
+  }
+
+  .cmd {
+    justify-content: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
 }
 /* /side-bar */
 
@@ -204,6 +235,7 @@ aside hr {
 .topbar-list ul li {
   display: inline-block;
   padding: 0 10px;
+  font-size: 13px;
 }
 /* /top-bar */
 
@@ -241,6 +273,30 @@ aside hr {
   border-radius: 50%;
 }
 
+@media all and (max-width: 568px)  {
+  .card {
+    flex-basis: calc(100% / 2 - 20px);
+  }
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+  .card {
+    flex-basis: calc(100% / 2 - 20px);
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .card {
+    flex-basis: calc(100% / 4 - 20px);
+  }
+}
+
+@media all and (min-width: 992px) {
+  .card {
+    flex-basis: calc(100% / 6 - 20px);
+  }
+}
+
 /* /scrollsection */
 
 /* footer */
@@ -274,6 +330,7 @@ footer {
   background-color: salmon;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .player > a {
@@ -297,10 +354,10 @@ footer {
   height: 4px;
 }
 
-/* .footer-center {
-  justify-content: center;
-  align-items: flex-end
-} */
+.song-bar > span {
+  margin: 0 10px;
+  font-size: 12px;
+}
 
 .footer-right {
   margin-right: 15px;
