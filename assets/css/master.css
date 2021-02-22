@@ -242,7 +242,11 @@ aside hr {
   display: inline-block;
   padding: 0 10px;
   font-size: 13px;
+  height: calc((100% / 6) - 20px);
+  margin-bottom: 20px;
 }
+
+
 /* /top-bar */
 
 /* scrollsection */
@@ -336,6 +340,10 @@ footer {
   margin-left: 30px;
 }
 
+.left-icons > a {
+  padding: 0 5px;
+}
+
 .player {
   background-color: salmon;
   justify-content: center;
@@ -347,10 +355,12 @@ footer {
   padding: 0 10px;
 }
 
-.play {
-  padding: 5px 7px;
+.fa-play {
+  padding: 8px 10px;
+  background-color: #fff;
   border: 1px solid #fff;
   border-radius: 50%;
+  color: #000;
 }
 
 .song-bar {
