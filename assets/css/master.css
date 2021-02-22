@@ -246,5 +246,104 @@ aside hr {
 /* footer */
 footer {
   height: 75px;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.footer-left-content img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.footer-left-content {
+  align-items: center;
+  background-color: yellow;
+}
+
+.footer-player-title {
+  background-color: blue;
+  margin-left: 15px;
+}
+
+.left-icons {
+  background-color: blue;
+  margin-left: 30px;
+}
+
+.player {
+  background-color: salmon;
+}
+
+.player > a {
+  padding: 0 10px;
+}
+
+.play {
+  padding: 0 20px;
+}
+
+.song-bar {
+  background-color: #5a5a5a;
+  border-radius: 13px;
+  padding: 1px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footer-center {
+  justify-content: center;
+  align-items: flex-end
+}
+
+.footer-center:after {
+  content: "1:16";
+}
+
+.footer-center:before {
+  content: "0:00";
+}
+
+.song-bar > div {
+  background-color: #c1c1c1;
+  width: 40%;
+  height: 2px;
+  border-radius: 10px;
+}
+
+.footer-right {
+  margin-right: 15px;
+  background-color: green;
+  justify-content: flex-end;
+}
+
+.footer-right a {
+  padding: 0 5px;
+
+}
+
+.right-icons {
+  align-items: center;
+}
+
+.song-bar-right {
+  background-color: #5a5a5a;
+  border-radius: 13px;
+  padding: 1px;
+}
+
+.song-bar-right > div {
+  background-color: #c1c1c1;
+  height: 2px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.footer-left, .footer-right {
+  flex-grow: 1;
+}
+
+.footer-center {
+  flex-grow: 3;
+}
+
 /* footer */
