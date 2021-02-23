@@ -202,6 +202,12 @@ aside hr {
     justify-content: center;
   }
 }
+
+@media all and (max-height: 350px) {
+  .login {
+    display: none;
+  }
+}
 /* /side-bar */
 
 /* upgrade-bar */
@@ -229,23 +235,26 @@ aside hr {
     left: 50px;
   }
 }
+
 /* upgrade-bar */
 
 /* top-bar */
-.topbar {
+nav ul {
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
-.topbar-list ul li {
-  display: inline-block;
-  padding: 0 10px;
+nav ul li {
+  padding: 10px 14px;
   font-size: 13px;
-  height: calc((100% / 6) - 20px);
-  margin-bottom: 20px;
 }
 
+@media all and (max-width: 568px) {
+  .topbar nav ul li {
+    font-size: 10px;
+  }
+}
 
 /* /top-bar */
 
@@ -283,17 +292,16 @@ aside hr {
   border-radius: 50%;
 }
 
+
+
 @media all and (max-width: 568px)  {
-  .card {
-    flex-basis: calc(100% / 2 - 20px);
-  }
 
   .scroll-section {
     width: calc(100vw - 50px);
   }
 }
 
-@media all and (min-width: 569px) and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .card {
     flex-basis: calc(100% / 2 - 20px);
   }
@@ -318,6 +326,10 @@ footer {
   height: 75px;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .footer-left-content img {
@@ -333,6 +345,7 @@ footer {
 .footer-player-title {
   background-color: blue;
   margin-left: 15px;
+  font-size: 12px;
 }
 
 .left-icons {
@@ -401,9 +414,63 @@ footer {
   flex-grow: 3;
 }
 
+.volume-bar {
+  align-items: center;
+}
+
 .volume-bar > input {
   width: 100%;
   height: 4px;
+}
+
+@media all and (max-width: 319px) {
+  .footer-right {
+    display: none;
+  }
+
+  .footer-left {
+    display: none;
+  }
+
+  .footer-center {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 568px) {
+  .volume-bar {
+    display: none;
+  }
+
+  .player svg {
+    width: 15px;
+  }
+
+  .right-icons {
+    margin-left: 7px;
+  }
+
+  .footer-left-content img {
+    display: none;
+  }
+}
+
+@media all and (max-width: 605px) {
+  .volume-icons {
+    width: min-content;
+  }
+
+}
+
+@media all and (max-width: 768px) {
+  .left-icons {
+    margin-left: 15px;
+  }
+
+  .footer-player-title {
+    margin-left: 5px;
+  }
+
 }
 
 /* footer */
