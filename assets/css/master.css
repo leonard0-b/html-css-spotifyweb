@@ -253,6 +253,11 @@ nav ul li {
   font-size: 13px;
 }
 
+.album-container p {
+  font-size: 13px;
+  padding-top: 5px;
+}
+
 @media all and (max-width: 256px) {
   .upgrade-bar > a {
     margin-right: 0;
