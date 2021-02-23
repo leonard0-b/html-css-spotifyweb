@@ -37,7 +37,7 @@ a {
 h2 {
   color: #fff;
   margin-bottom: 10px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .flex {
@@ -99,7 +99,6 @@ aside {
 }
 
 .side-section {
-  background-color: blue;
   margin: 4px 0;
 }
 
@@ -250,6 +249,17 @@ nav ul li {
   font-size: 13px;
 }
 
+@media all and (max-width: 256px) {
+  .upgrade-bar > a {
+    margin-right: 0;
+  }
+
+  .upgrade-bar {
+    justify-content: center;
+  }
+
+}
+
 @media all and (max-width: 568px) {
   .topbar nav ul li {
     font-size: 10px;
@@ -272,7 +282,7 @@ nav ul li {
 
 .card {
   flex-basis: calc(100% / 6 - 20px);
-  margin: 0 10px;
+  margin: 20px 10px;
 }
 
 .card > img {
@@ -284,7 +294,7 @@ nav ul li {
 }
 
 .row2 > p, .row3 > p {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 
 }
 
@@ -292,7 +302,21 @@ nav ul li {
   border-radius: 50%;
 }
 
+@media all and (max-width: 235px) {
+  .album-container {
+    justify-content: center;
+  }
 
+  .row1 h2, .row2 h2, .row3 h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .row1 p, .row2 p, .row3 p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
 
 @media all and (max-width: 568px)  {
 
@@ -339,17 +363,18 @@ footer {
 
 .footer-left-content {
   align-items: center;
-  background-color: yellow;
+}
+
+.footer-center {
+  width: 100%;
 }
 
 .footer-player-title {
-  background-color: blue;
   margin-left: 15px;
   font-size: 12px;
 }
 
 .left-icons {
-  background-color: blue;
   margin-left: 30px;
 }
 
@@ -358,7 +383,6 @@ footer {
 }
 
 .player {
-  background-color: salmon;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
@@ -380,6 +404,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
 .song-bar > input {
@@ -394,7 +420,6 @@ footer {
 
 .footer-right {
   margin-right: 15px;
-  background-color: green;
   justify-content: flex-end;
 }
 
@@ -404,14 +429,6 @@ footer {
 
 .right-icons {
   align-items: center;
-}
-
-.footer-left, .footer-right {
-  flex-grow: 1;
-}
-
-.footer-center {
-  flex-grow: 3;
 }
 
 .volume-bar {
@@ -430,10 +447,6 @@ footer {
 
   .footer-left {
     display: none;
-  }
-
-  .footer-center {
-    width: 100%;
   }
 }
 
