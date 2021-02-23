@@ -263,6 +263,7 @@ nav ul {
 nav ul li {
   padding: 10px 14px;
   font-size: 13px;
+  position: relative;
 }
 
 .album-container p {
@@ -271,8 +272,11 @@ nav ul li {
 }
 
 .green {
-  background-color: green;
-
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  right: 30%;
+  border: 1px solid green;
 }
 
 @media all and (max-width: 256px) {
