@@ -40,6 +40,10 @@ h2 {
   margin-top: 15px;
 }
 
+h5 {
+  padding: 10px 0;
+}
+
 .flex {
   display: flex;
 }
@@ -442,7 +446,8 @@ footer {
 }
 
 .left-icons {
-  margin-left: 30px;
+  margin-left: 10px;
+  flex-direction: column;
 }
 
 .left-icons > a {
