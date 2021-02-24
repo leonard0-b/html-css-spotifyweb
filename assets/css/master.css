@@ -117,8 +117,12 @@ aside {
   color: #FFF;
 }
 
-.side-section span:hover {
+.side-section a:hover span {
   color: #FFF;
+}
+
+.side-section a:hover i {
+  background-color: #fff;
 }
 
 .fa-plus {
@@ -127,6 +131,9 @@ aside {
   background-color: #a3a3a3;
   padding: 7px 7px;
   margin-top: 6px;
+}
+
+.side-section a:hover {
 }
 
 .create span {
@@ -271,6 +278,10 @@ nav ul li {
   position: relative;
 }
 
+nav ul li:hover a {
+  color: #fff;
+}
+
 .album-container p {
   font-size: 13px;
   padding-top: 5px;
@@ -285,11 +296,18 @@ nav ul li {
   display: none;
 }
 
-.green:hover {
+.green-active {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  right: 30%;
+  border: 1px solid green;
   display: inline;
 }
 
-
+.topbar nav ul li:hover span {
+  display: inline;
+}
 
 @media all and (max-width: 256px) {
   .upgrade-bar > a {
@@ -435,8 +453,6 @@ footer {
 }
 
 footer > div {
-  /* background-color: blue; */
-  /* height: 100%; */
   margin: 5px 5px;
 }
 
@@ -473,6 +489,15 @@ footer > div {
 
 .left-icons > a {
   padding: 0 5px;
+}
+
+.left-icons a svg:hover {
+  color: #fff;
+}
+
+.song-title:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .player {
@@ -535,6 +560,31 @@ footer > div {
 .volume-bar > input {
   width: 70px;
   height: 4px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 80%;
+      -webkit-appearance: none;
+      background-color: #5a5a5a;
+    }
+
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -80px 0 0 80px #43e5f7;
+    }
 }
 
 
