@@ -243,6 +243,7 @@ aside hr {
 
 .upgrade-bar > a:hover {
   transform: scale(1.2);
+  margin-right: 40px;
 }
 
 @media all and (max-width: 568px) {
@@ -281,7 +282,14 @@ nav ul li {
   left: 30%;
   right: 30%;
   border: 1px solid green;
+  display: none;
 }
+
+.green:hover {
+  display: inline;
+}
+
+
 
 @media all and (max-width: 256px) {
   .upgrade-bar > a {
@@ -426,6 +434,12 @@ footer {
   left: 0;
 }
 
+footer > div {
+  /* background-color: blue; */
+  /* height: 100%; */
+  margin: 5px 5px;
+}
+
 .footer-left-content img {
   width: 40px;
   margin-left: 10px;
@@ -436,7 +450,15 @@ footer {
 }
 
 .footer-center {
-  width: 100%;
+  flex: 2 0 300px;
+}
+
+.footer-left {
+  flex: 1 0 20px;
+}
+
+.footer-right {
+  flex: 1 0 20px;
 }
 
 .footer-player-title {
@@ -447,7 +469,6 @@ footer {
 
 .left-icons {
   margin-left: 10px;
-  flex-direction: column;
 }
 
 .left-icons > a {
@@ -512,25 +533,18 @@ footer {
 }
 
 .volume-bar > input {
-  width: 100%;
+  width: 70px;
   height: 4px;
 }
 
-@media all and (max-width: 319px) {
-  .footer-right {
-    display: none;
-  }
 
-  .footer-left {
-    display: none;
-  }
+@media all and (max-width: 376px) {
+ .footer-center {
+   flex: 2 0 150px;
+ }
 }
 
 @media all and (max-width: 568px) {
-  .volume-bar {
-    display: none;
-  }
-
   .player svg {
     width: 10px;
   }
@@ -541,8 +555,12 @@ footer {
 }
 
 @media all and (max-width: 605px) {
-  .volume-icons {
-    width: min-content;
+  .volume-bar {
+    display: none;
+  }
+
+  .footer-player-title {
+    display: none;
   }
 
 }
